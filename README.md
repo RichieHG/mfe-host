@@ -1,2 +1,2 @@
 # mfe-host
-Host application to microfrontends 
+Host application - MFE Root - Single-spa
