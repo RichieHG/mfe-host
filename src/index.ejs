@@ -31,6 +31,11 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
+  <!-- 
+    NOTE: In this part you have to declare the dependencies that you will need. 
+    i.e. 
+    "react" : "https://unpkg.com/react@18/umd/react.development.js"
+   -->
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -47,8 +52,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@richiehg/root-config": "//localhost:9000/richiehg-root-config.js",
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@richiehg/root-config": "//localhost:9000/richiehg-root-config.js"
+        "@single-spa/login": "//localhost:4200/main.js"
       }
     }
   </script>
@@ -58,8 +64,7 @@
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
-
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
