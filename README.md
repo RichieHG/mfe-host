@@ -1,6 +1,6 @@
 # Host application - MFE Root - Single-spa
 
-This project was generated with [single-spa] version 4.12.
+This project was generated with [single-spa](https://github.com/single-spa/single-spa) version 4.12.
 
 ## Development server
 
